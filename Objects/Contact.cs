@@ -7,6 +7,7 @@ namespace Contact.Objects
     private string _name;
     private string _phone;
     private string _address;
+    private string _photo;
     private int _id;
     private static List<Contact> _instances = new List<Contact>();
 
@@ -15,6 +16,7 @@ namespace Contact.Objects
       _name = name;
       _phone = phone;
       _address = address;
+      _photo = photo;
       _instances.Add(this);
       _id = instances.Count;
     }
@@ -41,6 +43,14 @@ namespace Contact.Objects
     public void SetAddress(string address)
     {
       _address = address;
+    }
+    public string Getphoto()
+    {
+      return _photo;
+    }
+    public void SetPhoto(string photo)
+    {
+      _photo = photo;
     }
     public static List<Contact> GetAll()
     {

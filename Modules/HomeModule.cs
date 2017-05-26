@@ -8,7 +8,11 @@ using System.Collections.Generic;
     {
       public HomeModule()
       {
-        
+        Get["/"] = _ => {
+        List<Contact> allContacts = Contact.GetAll();
+        return View["index.cshtml"];
+      };
+
       }
     }
   }

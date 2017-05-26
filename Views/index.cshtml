@@ -4,10 +4,14 @@
 
 <div id = "index">
   <h2>My contacts:</h2>
+  <h4>Click a name to view the contact info</h4>
   <ol>
-
-    <li></li>
-
+    @foreach(var contact in @Model)
+    {
+    <li><a href="/contact/@contact.GetId()">@contact.GetName()</a></li>
+    }
   </ol>
-  <p> <a href="/contact/clear">Clear your contact list</a></p>
+  <form action="/contacts/clear" method="post">
+    <button type="submit" name="button">Clear all contacts</button>
+  </form>
 </div>
