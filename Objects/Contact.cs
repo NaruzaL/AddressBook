@@ -68,5 +68,9 @@ namespace AddressBook.Objects
     {
      _instances.Clear();
     }
+    public void Remove()
+   {
+     _instances.Remove(this);
+   }
   }
 }

@@ -30,6 +30,14 @@ using System.Collections.Generic;
           Contact.ClearAll();
           return View["contacts_cleared.cshtml"];
         };
+
+        Post["/contact/{id}/deleted"] = parameters => {
+          Contact selectedContact = Contact.Find(parameters.id);
+          selectedContact.Remove();
+          List<Contact> allContacts = Contact.GetAll();
+          return View["contact_deleted.cshtml"];
+        };
+
       }
     }
   }

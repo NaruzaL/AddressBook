@@ -4,7 +4,7 @@
 
 <div id="new">
 
-</div>
+
   <h2>Your contact:</h2>
 <ul>
   <li>@Model.GetName()</li>
@@ -15,5 +15,8 @@
   </ul>
 </ul>
 
-
+<form action="/contact/@Model.GetId()/deleted" method="post">
+<button type="submit" name="button">Delete this contact</button>
+</form>
   <p><a href="/">View all contacts</a></p>
+</div>
