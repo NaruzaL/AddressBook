@@ -5,14 +5,14 @@
 <div id = "index">
   <h2>My contacts:</h2>
   <h4>Click a name to view the contact info</h4>
-  <ol>
+  <ul>
 
     @foreach(var contact in @Model)
     {
     <li><a href="/contact/@contact.GetId()">@contact.GetName()</a></li>
     }
 
-  </ol>
+  </ul>
   <p><a href="/contact/add">Add a contact</a></p>
   <form action="/contact/clear" method="post">
     <button type="submit" name="button">Clear all contacts</button>

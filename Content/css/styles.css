@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "Traveling_Typewriter";
+    src: url("../fonts/TravelingTypewriter.ttf");
+}
+
+@font-face {
+    font-family: "Jenna Sue";
+    src: url("../fonts/JennaSue.ttf");
+}
+
+
+body {
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-repeat: repeat-y;
+  font-size: 42px;
+  font-family: Traveling_Typewriter;
+  font-weight: bold;
+  margin-left: 80px;
+}
+
+a {
+  font-size: 32px;
+  color: #8B3E2F;
+}
+
+button {
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none;
+  font-family: Jenna Sue;
+  color: #104E8B;
+}
+
+label {
+  color: #104E8B;
+  font-family: Jenna Sue;
+    margin-left: 80px;
+}
+
+input {
+  font-family: Jenna Sue;
+  color: #104E8B;
+}
+
+input[type="text"], textarea {
+
+  background-color : #C5C1AA;
+}
+
+#fb {
+  margin-left: 80px;
+}
+
+#index {
+  text-align: center;
+  margin-top: 60px;
+}
+
+#add {
+  margin-top: 60px;
+}
+
+#new {
+  margin-left: auto;
+  margin-top: 60px;
+}
+
+#clear {
+  margin-top: 60px;
+}

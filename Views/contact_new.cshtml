@@ -5,13 +5,13 @@
 <div id="new">
 
 </div>
-  <h2>You've added a new contact</h2>
+  <h2>Your contact:</h2>
 <ul>
   <li>@Model.GetName()</li>
   <ul>
-    <li>@Model.GetPhone()</li>
-    <li>@Model.GetAddress()</li>
-    <li><img src="@Model.GetPhoto()" alt ="contact's photo"></a></li>
+    <li>Phone: @Model.GetPhone()</li>
+    <li>Address: @Model.GetAddress()</li>
+    <li><img src="@Model.GetPhoto()" alt ="@Model.GetName()'s photo"></a></li>
   </ul>
 </ul>
 
