@@ -27,7 +27,7 @@ _This app stores contact info such as name, phone number, address and a photo. I
 
 ## Known Bugs
 
-_None_
+_Deleting a contact that isn't the last one in the list causes the id's for each contact to be mismatched. Needs a method to fix id's if the contact deleted isn't the last._
 
 ## Support and contact details
 
