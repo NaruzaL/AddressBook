@@ -2,14 +2,14 @@
   Layout="Shared/_Layout.cshtml";
 }
 
-<div class="container">
+<div id="new">
   <h2>You've added a new contact</h2>
 <ul>
   <li>@Model.GetName()</li>
   <ul>
-    <li><a href="@model.GetPhoto()" alt = "contact's photo"></a></li>
     <li>@Model.GetPhone()</li>
     <li>@Model.GetAddress()</li>
+    <li><a href="@model.GetPhoto()" alt ="contact's photo"></a></li>
   </ul>
 </ul>
 
