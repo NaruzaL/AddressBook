@@ -18,12 +18,7 @@ using System.Collections.Generic;
         Post["/contact/new"] = _ => {
           Contact newContact = new Contact(Request.Form["name"], Request.Form["phone"], Request.Form["address"], Request.Form["photo"]);
           List<Contact> addedContact = Contact.GetAll();
-          return View["contact_new.cshtml", addedContact];
-        };
-
-        Get["/contact/new"] = _ => {
-          List<Contact> thisContact = Contact.GetAll();
-          return View["contact_new.cshtml"]  ;
+          return View["contact_new.cshtml", newContact];
         };
 
         Get["/contact/{id}"] = parameters => {
