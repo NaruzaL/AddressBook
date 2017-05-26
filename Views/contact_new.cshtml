@@ -3,16 +3,17 @@
 }
 
 <div id="new">
+
+</div>
   <h2>You've added a new contact</h2>
 <ul>
   <li>@Model.GetName()</li>
   <ul>
     <li>@Model.GetPhone()</li>
     <li>@Model.GetAddress()</li>
-    <li><a href="@model.GetPhoto()" alt ="contact's photo"></a></li>
+    <li><img src="@Model.GetPhoto()" alt ="contact's photo"></a></li>
   </ul>
 </ul>
 
 
-  <p><a href="/contact/new">View your contacts</a></p>
-</div>
+  <p><a href="/">View your contacts</a></p>

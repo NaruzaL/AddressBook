@@ -9,7 +9,7 @@ namespace AddressBook.Objects
     private string _address;
     private string _photo;
     private int _id;
-    private static List<Contact> _instances = new List<Contact>();
+    private static List<Contact> _instances = new List<Contact>{};
 
     public Contact (string name, string phone, string address, string photo)
     {
