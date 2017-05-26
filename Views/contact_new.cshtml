@@ -15,8 +15,9 @@
   </ul>
 </ul>
 
-<form action="/contact/@Model.GetId()/deleted" method="post">
-<button type="submit" name="button">Delete this contact</button>
-</form>
   <p><a href="/">View all contacts</a></p>
+  <p><a href="/contact/add">Add another contact</a></p>
+  <form action="/contact/@Model.GetId()/deleted" method="post">
+    <button type="submit" name="button">Delete this contact</button>
+  </form>
 </div>
